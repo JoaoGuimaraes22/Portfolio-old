@@ -1,0 +1,240 @@
+/*Variables*/
+
+$black: black;
+$dark-color: #181818;
+$light-dark-color: #1d1d1d;
+$blue: #08fdd8;
+$pink: #fc0853;
+$white: #ffffff;
+
+@mixin Flex($direction){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+
+/*Global*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-style: none;
+    color: $white;
+}
+
+ul li{
+    list-style: none;
+}
+
+/*NavBar*/
+
+#main-nav{
+    #navbar{
+        background: $dark-color;
+        width: 100%;
+        padding: 2vh;
+        color: $white;
+        position: fixed;
+        border-bottom: $blue 3px solid;
+        @include Flex(row);
+       .logo{
+           flex: 1;
+           .logo-text{
+               text-align: center;
+               font-size: 20px;
+               font-weight:575;
+               .g{
+                   color: $pink;
+               }
+               .sign{
+                   color: $blue;
+               }
+           }
+
+       } 
+       .links{
+           flex: 1;
+           @include Flex(row);
+           .link{
+               margin-right: 4vw;
+           }
+           .link a{
+               color: $white;
+           }
+           .link a:hover{
+               color: $pink;
+           }
+       }
+       .socials{
+           flex: 1;
+           @include Flex(row);
+           .social{
+               margin-right: 3vw;
+               .fab{
+                   font-size: 1.5rem;
+               }
+           }
+           .linkedin a:hover{
+               color: #0073b0; 
+           }
+           .instagram a:hover{
+               color: #ee1b7a;
+           }
+           .github a:hover{
+               color: #f05134;
+           }
+       }
+    }
+}
+
+/* Landing Page (Home) */
+
+#home{
+    .landing-page{
+        height: 100vh;
+        //background-image:linear-gradient($black, #428f83);
+        background-image: url(/dist/img/download2.gif);
+        @include Flex(column);
+        .landing-text{
+            display: block;
+            color: $white;
+            font-weight: 100;
+            font-size: 3rem;
+        }
+        .landing-text-l1{
+            .landing-name{
+                color: $pink;
+            }
+        }
+        .landing-text-l2{
+            margin: 1.5vh  0 2vh 0;
+        }
+        .btn-landing{
+            .btn-view-my-work{
+                display: block;
+                background: transparent;
+                padding: 0.8rem;
+                border: $white solid 2px;
+                cursor: pointer;
+                .btn-view{
+                    font-size: 1.7rem;
+                    font-weight: 100;
+                    color: $white;
+                    .fa-arrow-down{
+                        margin-left: 1rem;
+                    }
+                }
+            }
+            .btn-view-my-work:hover{
+                background: $blue;
+                border: $blue;
+            }
+        }
+        
+    }
+}
+
+/* About */
+
+#about{
+    margin-top: 6vh;
+    padding-top: 11vh;
+    .title-about{
+        width: 10%;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        font-weight: bolder;
+        font-size: 2rem;
+        border-bottom: 4px solid $light-dark-color;
+    }
+    .main-about{
+        @include Flex(row);
+        margin-top: 10vh;
+        .face-img-div{
+            .face-img{
+                width: 75%;
+            }
+        }
+        .desc{
+            width: 75%;
+            margin-right: 7vw;
+            .who-me{
+                .who-me-item{
+                    margin-bottom: 10vh;
+                    .who-me-container{
+                        background: $blue;
+                        display: inline-block;
+                        padding: 1vh 2vw 0vh 2vw;
+                        border: 5px $light-dark-color solid;
+                        .who-me-title{
+                            margin-bottom: 2vh;
+                            color: $white;
+                            font-size: 1.5rem;
+                            text-align: center;
+                            .who-span{
+                                color: $pink !important;
+                                font-size: 2rem;
+                            }
+                        }
+                    }
+                    .who-me-ps{
+                        margin-top: 3vh;
+                        .who-me-p{
+                            font-size: 1rem;
+                        }
+                        .who-me-p-last{
+                            margin-top: 3vh;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Skills */
+
+#skills{
+    background: $light-dark-color;
+    height: 100vh;
+    color: $white;
+    padding-top: 12vh;
+    .title-skills{
+        width: 10%;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 5px;
+        font-weight: bolder;
+        font-size: 2rem;
+        color: $white;
+        border-bottom: 4px solid $white;
+    }
+    .main-skills{
+        @include Flex(row)
+        .skills-box{
+            .skills-desc{
+
+            }
+            .skills-list{
+
+            }
+            .skills-item{
+
+            }
+        }
+    }
+}
