@@ -207,8 +207,8 @@ ul li {
 /* About */
 #about {
   background: #fefefe;
-  margin-top: 6vh;
   padding-top: 11vh;
+  border-top: 3px solid #08fdd8;
 }
 
 #about .title-about {
@@ -288,7 +288,6 @@ ul li {
   background: #1d1d1d;
   height: 100vh;
   color: #fefefe;
-  padding-top: 12vh;
 }
 
 #skills .title-skills {
@@ -299,6 +298,7 @@ ul li {
   padding-bottom: 5px;
   font-weight: bolder;
   font-size: 2rem;
+  padding-top: 13vh;
   color: #fefefe;
   border-bottom: 4px solid #fefefe;
 }
@@ -317,6 +317,37 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+#skills .flag {
+  width: 100%;
+  height: 56px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  position: relative;
+  background: #08fdd8;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0 !important;
+}
+
+#skills .flag:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  border-bottom: 7rem solid #fefefe;
+  border-left: 42rem solid transparent;
+  border-right: 42rem solid transparent;
 }
 
 #skills::after {
@@ -458,6 +489,7 @@ ul li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-bottom: 10vh;
 }
 
 #contact .main-contact .sub-text {
@@ -510,6 +542,61 @@ ul li {
 
 #contact .main-contact .contact-me .form-submit:hover {
   background: #08fdd8;
+  color: #fefefe;
+}
+
+/* Footer */
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fc0853), to(#1d1d1d));
+  background: linear-gradient(#fc0853, #1d1d1d);
+  border-top: #08fdd8 3px solid;
+}
+
+#footer .ft-socials {
+  text-align: center;
+}
+
+#footer .ft-socials .ft-social {
+  color: #fefefe;
+  font-size: 3rem;
+}
+
+#footer .ft-socials .ft-lkdn {
+  margin-right: 6vw;
+}
+
+#footer .ft-socials .ft-lkdn:hover {
+  color: #0073b0;
+}
+
+#footer .ft-socials .ft-insta:hover {
+  color: #fc0853;
+}
+
+#footer .ft-socials .ft-git {
+  margin-left: 6vw;
+}
+
+#footer .ft-socials .ft-git:hover {
+  color: #f05134;
+}
+
+#footer .copyright {
+  padding: 3vh 0;
   color: #fefefe;
 }
 /*# sourceMappingURL=main.css.map */
