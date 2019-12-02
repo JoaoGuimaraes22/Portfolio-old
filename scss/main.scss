@@ -23,6 +23,10 @@ $white: #fefefe;
     box-sizing: content-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: 'Roboto', sans-serif;
 }
@@ -341,7 +345,7 @@ ul li{
     border-right: 42rem solid transparent;
     }
     .title-contact{
-        width: 10%;
+        width: 14%;
         margin: 0 auto;
         text-align: center;
         text-transform: uppercase;
@@ -352,5 +356,35 @@ ul li{
         border-bottom: 4px solid $white;
         padding-top: 5rem;
     }
-    
+    .main-contact{
+        margin-top: 10vh;
+        @include Flex(column);
+        .sub-text{
+            color: $blue;
+            font-size: 1.3rem;
+        }
+        .contact-me{
+            margin-top: 10vh;
+            @include Flex(column);
+            .form-item{
+                margin-bottom: 0.5vh;
+                width: 150%;
+                outline: transparent;
+                padding: 1rem;
+                border: rgba(254, 254, 254, 0.2) 2px solid;
+                background: $dark-color;
+            }
+            .form-item:focus{
+                border: rgba(254, 254, 254, 0.8) 2px solid;;
+            }
+            .form-submit{
+                color: $light-dark-color;
+                border: $light-dark-color 2px solid;
+                background: rgba(254, 254, 254, 0.5);
+                font-size: 1.3rem;
+                cursor: pointer;
+            }
+        }
+    }
+
 }
