@@ -462,7 +462,7 @@ ul li {
 
 #contact .main-contact .sub-text {
   color: #08fdd8;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
 }
 
 #contact .main-contact .contact-me {
@@ -484,11 +484,12 @@ ul li {
 
 #contact .main-contact .contact-me .form-item {
   margin-bottom: 0.5vh;
-  width: 150%;
+  width: 200%;
   outline: transparent;
   padding: 1rem;
   border: rgba(254, 254, 254, 0.2) 2px solid;
   background: #181818;
+  color: #fefefe;
 }
 
 #contact .main-contact .contact-me .form-item:focus {
@@ -498,8 +499,17 @@ ul li {
 #contact .main-contact .contact-me .form-submit {
   color: #1d1d1d;
   border: #1d1d1d 2px solid;
-  background: rgba(254, 254, 254, 0.5);
+  background: rgba(254, 254, 254, 0.2);
   font-size: 1.3rem;
+  font-weight: 1000;
   cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.4rem;
+}
+
+#contact .main-contact .contact-me .form-submit:hover {
+  background: #08fdd8;
+  color: #fefefe;
 }
 /*# sourceMappingURL=main.css.map */
