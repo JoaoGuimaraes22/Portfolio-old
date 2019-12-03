@@ -220,7 +220,7 @@ ul li{
 
 #skills{
     background: $light-dark-color;
-    height: 100vh;
+    height: 110vh;
     color: $white;
     .title-skills{
         width: 10%;
@@ -230,24 +230,25 @@ ul li{
         padding-bottom: 5px;
         font-weight: bolder;
         font-size: 2rem;
-        padding-top: 13vh;
+        padding-top: 16vh;
         color: $white;
         border-bottom: 4px solid $white;
     }
     .main-skills{
-        @include Flex(row);
-        .skills-box{
-            .skills-desc{
-
-            }
-            .skills-list{
-
-            }
-            .skills-item{
-
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        flex-direction: column;
+        margin-top: 8vh;
+        .skill-box{
+            padding-top: 3vh;
+            .skill-topic{
+                color: $pink;
             }
         }
-    }
+}
     .flag {
         width: 100%;
         height: 56px;
