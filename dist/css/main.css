@@ -240,11 +240,12 @@ ul li {
 }
 
 #about .main-about .face-img-div .face-img {
-  width: 75%;
+  width: 65%;
+  margin-right: -8rem;
 }
 
 #about .main-about .desc {
-  width: 75%;
+  width: 100%;
   margin-right: 7vw;
 }
 
@@ -572,8 +573,7 @@ ul li {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 3vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fc0853), to(#1d1d1d));
-  background: linear-gradient(#fc0853, #1d1d1d);
+  background: #131313;
   border-top: #08fdd8 3px solid;
 }
 

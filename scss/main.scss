@@ -176,11 +176,12 @@ ul li{
         margin-top: 10vh;
         .face-img-div{
             .face-img{
-                width: 75%;
+                width: 65%;
+                margin-right: -8rem;
             }
         }
         .desc{
-            width: 75%;
+            width: 100%;
             margin-right: 7vw;
             .who-me{
                 .who-me-item{
@@ -430,7 +431,7 @@ ul li{
 #footer{
     @include Flex(column);
     padding-top: 3vh;
-    background: linear-gradient($pink, $light-dark-color);
+    background: #131313;
     border-top: $blue 3px solid;
     .ft-socials{
         text-align: center;
